@@ -25,8 +25,9 @@ function App() {
         setError(null)
       })
       .catch((err) => {
-        setError(err.message);
-        setData(null);
+        setError(err.message)
+        console.log(error)
+        setData(null)
       })
       .finally(() => {
         setLoading(false);
@@ -35,7 +36,7 @@ function App() {
 
   const handleSubmit = (e, reqData) => {
     e.preventDefault()
-    setLoading(true);
+    setLoading(true)
     getData(reqData)
   }
 
