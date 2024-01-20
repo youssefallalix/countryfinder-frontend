@@ -10,7 +10,7 @@ function App() {
   const [formData, setFormData] = useState(null);
 
   const getData = (country) => {
-    fetch(`https://crispy-bassoon-p6599vj67qv2r5r6-5000.app.github.dev/shape/${country}`, {
+    fetch(`https://ubiquitous-pancake-xvwwx67qqj726vj7-5000.app.github.dev/shapes/${country}`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
       mode: 'cors',
